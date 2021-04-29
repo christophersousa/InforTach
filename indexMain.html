@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./css/newMenu.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/modalLogin.css">
+    <link rel="stylesheet" href="./css/modalCard.css">
+    <link rel="stylesheet" href="./css/catalogo.css">
+
+    <title>InforTach</title>
+</head>
+<body id="body">
+    <a href="https://icons8.com/icon/o4V4IXgZasg6/fast-cart"></a>
+    <!-- Menu de navegação -->
+    <div id="Menu">
+		<header class="containerHeader">
+			<nav class ="Menu">
+				<ul id="home" >
+                    <li>
+                        <a href="./index.html"> <i class="fas fa-home"></i>Home</a>
+                    </li>
+				</ul>
+				<img id="logo" src="img/Logo.png">
+				<ul class= 'navegation'>
+                    <li >
+					    <a href="" id="computer"><i class="fas fa-desktop"></i>Computador</a>
+                    </li>
+                    <li>
+					    <a id="notebook" href="./indexMain.html"><i  class="fas fa-laptop"></i>Notebook</a>
+                    </li>
+                    <li>
+					    <a href="./smartphones/smartphone.html" id="mobile"><i class="fas fa-mobile-alt"></i>Celular</a>
+                    </li>    
+                    <li id="login" class="logar">
+                        <i class="fas fa-user-circle"></i>
+                        <p class="cadastro">Login</p>
+                        <a class="cadastro">Login</a>
+                    </li>
+				</ul>
+			</nav>
+			
+		</header>
+	</div>
+
+
+    <!--imput de pesquisa-->
+    <form id="research">
+        <i class="fas fa-search"></i>
+        <input type="text" name="pesquisa" id="pesquisa">
+    </form>
+    
+    <!--Catalogo-->
+
+    <main class="ConteinerCard"></main>
+    
+     <!--Social-->
+    
+     <main class="social-main">
+        <div class="social">
+            <h3>Direitos altorais</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+        <div class="social" id="alunos">
+            <h3>Programadores</h3>
+            <p>Christopher Silva de Sousa.</p>
+            <p>Luís Henrique Ferreira Freire.</p>
+            <p>João Pedro de Sousa Rodrigues</p>
+        </div>
+        <div class="social">
+            <h3>Objetivo</h3>
+            <p>Produzir um site para auxiliar os usuarios a escolherem os melhores produtos para suas necessidades.</p>
+        </div>
+    </main>
+    <div class="copyright-container">
+        <i class="fas fa-heart"></i>
+        <span class="copyright">Projeto de Linguagem de Marcação</span>
+    </div>   
+
+    <!--Modal de cadastro e cards-->
+    <div class="card"></div>
+    <div class="row"> </div>
+
+    <!--Javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./javascript/slideshow.js"></script>
+
+    <script type="module" src="./javascript/index.js"></script>
+</body>
+</html>

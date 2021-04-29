@@ -1,0 +1,64 @@
+
+
+
+/* Menu de serviços*/
+
+.services-main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 100px auto;
+    max-width: 1100px;
+}
+
+.service{
+    width: 300px;
+    margin: 2rem 2rem;
+}
+
+.service a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service h2{
+    color: black;
+    font-weight: 800;
+}
+
+.service img{
+    height: 200px;
+}
+
+.service-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service p{
+    color: black;
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 1.3rem;
+}
+
+@media all and (max-width: 850px){
+    .services-main{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: flex-end;
+        justify-content: center;
+    
+    }
+    
+    .service{
+        width: 320px;
+        margin: 2.5rem 0.5rem; 
+    }
+}
+

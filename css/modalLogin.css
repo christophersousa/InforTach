@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap');
+@font-face{
+    font-family: 'Quicksand';
+    src: url(../fonts/Quicksand_Book.otf);
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logar a{
+    display: none;
+}
+
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2000;
+}
+
+.modal-container.mostrar{
+    display: flex;
+}
+
+@media all and (max-width:650px){
+    .modal-container.mostrar{
+        display: none;
+    }
+
+    .cadastro a{
+        display: block;
+    }
+}
+
+.modal{
+    max-width: 700px;
+    min-width: 320px;
+    width: 25%;
+    height: 500px;
+    background-color: rgb(209, 208, 208);
+    padding: 35px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+   
+}
+
+.logoLogin, .logoUser{
+    align-self: center;
+    margin-top: 20px;
+}
+
+.logoLogin{
+    width: 150px;
+    height: 150px;
+}
+
+.logoUser{
+    width: 100px;
+    height: 100px;
+}
+
+.mostrar .modal{
+    animation: modal .8s;
+}
+
+@keyframes modal {
+    from{
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+       
+#senha, 
+#email, 
+#emailCadastro,
+#senhaCadastro,
+#confime{
+    width: 100%;
+    height: 45px;
+    font-size: 15px;
+    margin: .3rem;
+    border:1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    color: #363636;
+    padding: 8px 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#senha:hover, #email:hover, #confime:hover{
+    border: 2px solid rgb(48, 48, 48);
+}
+
+#enviar, #entrar{
+    width: 50%;
+    height: 35px;
+    margin: 20px 0 0 25%;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color:#6B8067;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+
+.complementos{
+    position: relative;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 6px;
+    margin-top: 5px;
+    left: 5;
+}
+
+.complementos a{
+    color: #575757;
+}
+.complementos a:hover{
+    color: black;
+}
+
+@media all and (max-width: 1200px ){
+    .complementos{
+        right: -28%;
+    }
+}
+
+@media all and (max-width: 950px ){
+    .complementos{
+        right: -15%;
+    }
+}
+
+@media all and (max-width: 800px ){
+    .complementos{
+        text-align: center;
+    }
+    .cancele{
+        display: none;
+    }
+}
+
+
+.close{
+    font-weight: 700;
+    font-size: 1.3rem;
+    font-family: inherit;
+    top: 10px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    color:  #575757;
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+}
+.close:hover{
+    color: black;
+}
+
+/*cadastre-se*/
+#cadastro{
+    margin-top: 30px;
+    font-size: 15px;
+    text-align: center;
+}
